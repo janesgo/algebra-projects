@@ -1,0 +1,36 @@
+﻿@page
+@model IISClient.Pages.DhmzModel
+@{
+    ViewData["Title"] = "DHMZ temperature";
+}
+
+<div class="text-center mt-2">
+    <h1>DHMZ temperature</h1>
+</div>
+
+<div class="col-sm-4 m-4 mx-auto">
+    <div class="card">
+        <div class="card-body">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="mb-3">
+                    <label asp-for="City" class="form-label"></label>
+                    <input asp-for="City" type="text" class="form-control">
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+                @if (ViewData["temperature"] != null && (double)ViewData["temperature"] != 9999)
+                {
+                    <div class="mt-2">
+                        <p> Temperature for @Model.City: @ViewData["temperature"] C</p>
+                    </div>
+                }
+                <button type="submit" class="btn btn-primary mt-3">Get Temperature</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@if (ViewData["error"] != null)
+{
+    <h4 class="text-danger">@ViewData["error"]</h4>
+}

@@ -1,0 +1,46 @@
+﻿<Window x:Class="WPFClient.InitialSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFClient"
+        xmlns:lang="clr-namespace:WPFClient.Properties"
+        mc:Ignorable="d"
+        Title="{x:Static lang:Resources.initialSettings}" Height="500" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+</Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="0.2*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="{x:Static lang:Resources.lblTitle}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+        <StackPanel Grid.Row="1" Margin="15">
+            <Label Content="{x:Static lang:Resources.lblChampionship}" FontWeight="Bold" />
+            <RadioButton GroupName="championship" x:Name="rbMen" Content="{x:Static lang:Resources.rbMen}" Tag="Men" IsChecked="True"/>
+            <RadioButton GroupName="championship" x:Name="rbWomen" Content="{x:Static lang:Resources.rbWomen}" Tag="Women" />
+        </StackPanel>
+        <StackPanel Grid.Row="2" Margin="15">
+            <Label Content="{x:Static lang:Resources.lblLanguage}" FontWeight="Bold" />
+            <RadioButton GroupName="language" x:Name="rbCroatian" Content="{x:Static lang:Resources.rbCroatian}" Tag="Croatian" IsChecked="True"/>
+            <RadioButton GroupName="language" x:Name="rbEnglish" Content="{x:Static lang:Resources.rbEnglish}" Tag="English" />
+        </StackPanel>
+        <StackPanel Grid.Row="3" Margin="15">
+            <Label Content="{x:Static lang:Resources.lblDataRepository}" FontWeight="Bold" />
+            <RadioButton GroupName="dataRepository" x:Name="rbFile" Content="{x:Static lang:Resources.rbFile}" Tag="File" IsChecked="True"/>
+            <RadioButton GroupName="dataRepository" x:Name="rbWeb" Content="{x:Static lang:Resources.rbWeb}" Tag="Web" />
+        </StackPanel>
+        <StackPanel Grid.Row="4" Margin="15">
+            <Label Content="{x:Static lang:Resources.lblWindowSize}" FontWeight="Bold" />
+            <RadioButton GroupName="windowSize" x:Name="rbFullscreen" Content="{x:Static lang:Resources.rbFullscreen}" Tag="Fullscreen" IsChecked="True" />
+            <RadioButton GroupName="windowSize" x:Name="rbSmall" Content="{x:Static lang:Resources.rbSmall}" Tag="Small" />
+            <RadioButton GroupName="windowSize" x:Name="rbMedium" Content="{x:Static lang:Resources.rbMedium}" Tag="Medium" />
+            <RadioButton GroupName="windowSize" x:Name="rbLarge" Content="{x:Static lang:Resources.rbLarge}" Tag="Large" />
+        </StackPanel>
+        <Button x:Name="btnStartApp" Grid.Row="5" Content="{x:Static lang:Resources.btnStartApp}" Width="100" Height="30" Click="btnStartApp_Click"/>
+    </Grid>
+</Window>

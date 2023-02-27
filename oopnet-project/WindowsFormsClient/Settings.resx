@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="gbSelectLanguage.Text" xml:space="preserve">
+    <value>Select language:</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;rbWeb.Parent" xml:space="preserve">
+    <value>gbSelectAccessType</value>
+  </data>
+  <data name="&gt;&gt;gbSelectGender.Name" xml:space="preserve">
+    <value>gbSelectGender</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="gbSelectLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 376</value>
+  </data>
+  <data name="rbWomen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 29</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gbSelectLanguage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="gbSelectAccessType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>372, 137</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;rbFile.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="rbMen.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Name" xml:space="preserve">
+    <value>btnOK</value>
+  </data>
+  <data name="rbWomen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 78</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="gbSelectAccessType.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="&gt;&gt;rbCroatian.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbWeb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rbMen.Text" xml:space="preserve">
+    <value>Men</value>
+  </data>
+  <data name="&gt;&gt;lblSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbEnglish.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rbCroatian.Text" xml:space="preserve">
+    <value>Croatian</value>
+  </data>
+  <data name="gbSelectGender.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="rbWeb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbWomen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 52</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>11, 24</value>
+  </data>
+  <data name="rbEnglish.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="rbWomen.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;rbWomen.Parent" xml:space="preserve">
+    <value>gbSelectGender</value>
+  </data>
+  <data name="&gt;&gt;gbSelectAccessType.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="rbCroatian.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbWeb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 29</value>
+  </data>
+  <data name="gbSelectGender.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="rbMen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 35</value>
+  </data>
+  <data name="rbWeb.Text" xml:space="preserve">
+    <value>Web</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rbEnglish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 29</value>
+  </data>
+  <data name="rbFile.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="&gt;&gt;rbMen.Parent" xml:space="preserve">
+    <value>gbSelectGender</value>
+  </data>
+  <data name="rbEnglish.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;gbSelectLanguage.Name" xml:space="preserve">
+    <value>gbSelectLanguage</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 17</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 52</value>
+  </data>
+  <data name="rbFile.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbCroatian.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;rbWomen.Name" xml:space="preserve">
+    <value>rbWomen</value>
+  </data>
+  <data name="&gt;&gt;gbSelectLanguage.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;rbCroatian.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblSettings.Text" xml:space="preserve">
+    <value>Application Settings</value>
+  </data>
+  <data name="btnOK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;rbEnglish.Name" xml:space="preserve">
+    <value>rbEnglish</value>
+  </data>
+  <data name="gbSelectAccessType.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="&gt;&gt;gbSelectGender.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rbEnglish.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSettings.Name" xml:space="preserve">
+    <value>lblSettings</value>
+  </data>
+  <data name="rbEnglish.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="&gt;&gt;lblSettings.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;rbMen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnOK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 561</value>
+  </data>
+  <data name="rbCroatian.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="gbSelectLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>372, 137</value>
+  </data>
+  <data name="&gt;&gt;rbCroatian.Name" xml:space="preserve">
+    <value>rbCroatian</value>
+  </data>
+  <data name="&gt;&gt;rbCroatian.Parent" xml:space="preserve">
+    <value>gbSelectLanguage</value>
+  </data>
+  <data name="rbWomen.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>345, 561</value>
+  </data>
+  <data name="lblSettings.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gbSelectAccessType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 227</value>
+  </data>
+  <data name="&gt;&gt;gbSelectGender.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gbSelectGender.Size" type="System.Drawing.Size, System.Drawing">
+    <value>372, 137</value>
+  </data>
+  <data name="&gt;&gt;rbMen.Name" xml:space="preserve">
+    <value>rbMen</value>
+  </data>
+  <data name="rbMen.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;rbWeb.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblSettings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rbWeb.Name" xml:space="preserve">
+    <value>rbWeb</value>
+  </data>
+  <data name="&gt;&gt;rbWomen.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;gbSelectLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbSelectAccessType.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rbWomen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;rbFile.Parent" xml:space="preserve">
+    <value>gbSelectAccessType</value>
+  </data>
+  <data name="rbMen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="&gt;&gt;rbFile.Name" xml:space="preserve">
+    <value>rbFile</value>
+  </data>
+  <data name="gbSelectAccessType.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;rbMen.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rbEnglish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 78</value>
+  </data>
+  <data name="gbSelectLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="rbFile.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnOK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btnCancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="rbWomen.Text" xml:space="preserve">
+    <value>Women</value>
+  </data>
+  <data name="rbCroatian.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 35</value>
+  </data>
+  <data name="&gt;&gt;gbSelectGender.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="rbFile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="rbWeb.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;btnOK.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rbFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 29</value>
+  </data>
+  <data name="gbSelectGender.Text" xml:space="preserve">
+    <value>Select gender:</value>
+  </data>
+  <data name="&gt;&gt;gbSelectAccessType.Name" xml:space="preserve">
+    <value>gbSelectAccessType</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbSelectAccessType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gbSelectLanguage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;gbSelectLanguage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="rbCroatian.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 29</value>
+  </data>
+  <data name="gbSelectAccessType.Text" xml:space="preserve">
+    <value>Select data repository:</value>
+  </data>
+  <data name="&gt;&gt;rbFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rbMen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 29</value>
+  </data>
+  <data name="gbSelectGender.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 78</value>
+  </data>
+  <data name="lblSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 25</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>576, 635</value>
+  </data>
+  <data name="gbSelectGender.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="rbEnglish.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="rbFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 35</value>
+  </data>
+  <data name="&gt;&gt;rbEnglish.Parent" xml:space="preserve">
+    <value>gbSelectLanguage</value>
+  </data>
+  <data name="btnOK.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="rbWeb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 78</value>
+  </data>
+  <data name="rbWeb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>hr</value>
+  </metadata>
+</root>

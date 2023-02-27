@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/apk/tools"
+    android:id="@+id/fragments"
+    app:startDestination="@id/menuRecipes">
+    <fragment
+        android:id="@+id/menuRecipes"
+        android:name="hr.project.mrcook.RecipesFragment"
+        android:label="@string/recipes"
+        tools:layout="@layout/fragment_recipes" />
+    <fragment
+        android:id="@+id/menuFavourites"
+        android:name="hr.project.mrcook.FavouritesFragment"
+        android:label="@string/fav"
+        tools:layout="@layout/fragment_favourites" />
+    <fragment
+        android:id="@+id/menuMap"
+        android:name="hr.project.mrcook.MapsFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_maps" />
+</navigation>

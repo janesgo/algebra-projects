@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MrCook</string>
+    <string name="no_internet">No connections</string>
+    <string name="fav">Favourites</string>
+    <string name="recipes">Recipes</string>
+    <string name="exit">Exit</string>
+    <string name="confirmation">Really exit?</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="delete">Delete</string>
+    <string name="sure">Are you sure to delete</string>
+    <string name="fragment_recipes_title">Recipes</string>
+    <string name="fragment_favourites_title">Favourites</string>
+    <string name="pager_favourite">Favourite</string>
+    <string name="add_new_recipe">Add new Recipe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recipes_map">Recipes Map</string>
+</resources>

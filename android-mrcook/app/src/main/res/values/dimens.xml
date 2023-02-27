@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splashPadding">50dp</dimen>
+    <dimen name="splashHeight">400dp</dimen>
+    <dimen name="splashWidth">300dp</dimen>
+    <dimen name="splashMarginTop">50dp</dimen>
+    <dimen name="splashTextSize">40sp</dimen>
+    <dimen name="navheaderWidth">50dp</dimen>
+    <dimen name="navheaderHeight">70dp</dimen>
+    <dimen name="navHeaderMargin">15dp</dimen>
+    <dimen name="navViewWidth">256dp</dimen>
+    <dimen name="navViewHeight">300dp</dimen>
+    <dimen name="recipes_padding">10dp</dimen>
+    <dimen name="recipes_iv_size">80dp</dimen>
+    <dimen name="recipes_tv_text_size">20sp</dimen>
+    <dimen name="tv_margin_left">20dp</dimen>
+    <dimen name="cv_corner_radius">9dp</dimen>
+    <dimen name="tv_recipes_size">80dp</dimen>
+</resources>

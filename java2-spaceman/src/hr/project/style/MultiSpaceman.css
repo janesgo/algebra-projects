@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 19, 2021, 11:05:31 AM
+    Author     : Goran
+*/
+
+.root {
+    -fx-font-family: "OCR A Extended";
+}
+
+.button {
+    -fx-pref-width: 400px;
+    -fx-pref-height: 100px;
+    -fx-font-size: 20;
+}
+
+#lblTitle {
+    -fx-padding: 30px;
+    -fx-font-size: 70;
+    -fx-text-fill: white;
+}
+
+#lblScoreFirst {
+    -fx-font-size: 22;
+    -fx-text-fill: #00ff22;
+}
+
+#lblScoreSecond {
+    -fx-font-size: 22;
+    -fx-text-fill: #008cff;
+}
+
+#lblScore {
+    -fx-font-size: 25;
+    -fx-text-fill: white;
+}
+
+#pnGame, #gpSpaceman {
+    -fx-background-color: black;
+    -fx-background-image: url("../assets/starfield.png");
+    -fx-background-repeat: repeat;
+}
+
+#btnInfo {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 50;
+}
+
+#lblWaiting {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 21;
+}

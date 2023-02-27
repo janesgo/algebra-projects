@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A1ADE50-87EF-419D-9F77-11243223297B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsClient</RootNamespace>
+    <AssemblyName>WindowsFormsClient</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ImageResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageResource.resx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="PlayerUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlayerUserControl.Designer.cs">
+      <DependentUpon>PlayerUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RankingPlayers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RankingPlayers.Designer.cs">
+      <DependentUpon>RankingPlayers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RankingSpectators.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RankingSpectators.Designer.cs">
+      <DependentUpon>RankingSpectators.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RankingSpectatorsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RankingSpectatorsUserControl.Designer.cs">
+      <DependentUpon>RankingSpectatorsUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RankingUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RankingUserControl.Designer.cs">
+      <DependentUpon>RankingUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InitialConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InitialConfiguration.Designer.cs">
+      <DependentUpon>InitialConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ImageResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImageResource.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.hr.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerUserControl.hr.resx">
+      <DependentUpon>PlayerUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerUserControl.resx">
+      <DependentUpon>PlayerUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankingPlayers.hr.resx">
+      <DependentUpon>RankingPlayers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankingPlayers.resx">
+      <DependentUpon>RankingPlayers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankingSpectators.hr.resx">
+      <DependentUpon>RankingSpectators.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankingSpectators.resx">
+      <DependentUpon>RankingSpectators.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankingSpectatorsUserControl.resx">
+      <DependentUpon>RankingSpectatorsUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankingUserControl.resx">
+      <DependentUpon>RankingUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.hr.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InitialConfiguration.resx">
+      <DependentUpon>InitialConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
+      <Project>{CA3DB3A1-97FB-4099-89B3-58F6B4621057}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female-placeholder-headshot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male-placeholder-headshot-for-web.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenPlaceholder.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

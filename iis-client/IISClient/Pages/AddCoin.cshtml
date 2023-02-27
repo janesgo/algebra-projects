@@ -1,0 +1,64 @@
+﻿@page
+@using IISClient.Model
+@model AddCoin
+@{
+    ViewData["Title"] = "Add coin";
+}
+
+<div class="text-center mt-2">
+    <h1>Add coin</h1>
+</div>
+
+<div class="col-sm-6 m-4 mx-auto">
+    <div class="card">
+        <div class="card-body">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="mb-3">
+                    <label asp-for="Coin.Symbol" class="form-label"></label>
+                    <input asp-for="Coin.Symbol" type="text" class="form-control">
+                    <span asp-validation-for="Coin.Symbol" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Coin.Name" class="form-label"></label>
+                    <input asp-for="Coin.Name" type="text" class="form-control" id="name">
+                    <span asp-validation-for="Coin.Name" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Coin.Price" class="form-label"></label>
+                    <input asp-for="Coin.Price" type="number" class="form-control" step="any">
+                    <span asp-validation-for="Coin.Price" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Coin.PriceChange" class="form-label"></label>
+                    <input asp-for="Coin.PriceChange" type="number" class="form-control" step="any">
+                    <span asp-validation-for="Coin.PriceChange" class="text-danger"></span>
+                </div>
+                <div class="form-check">
+                    <input asp-for="Validate" class="form-check-input" type="radio" value="Xsd" checked>
+                    <label asp-for="Validate" class="form-check-label">
+                        XSD
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input asp-for="Validate" class="form-check-input" type="radio" value="Rng">
+                    <label asp-for="Validate" class="form-check-label">
+                        RNG 
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2">Add coin</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@if (ViewData["error"] != null)
+{
+    <h4 class="text-danger">@ViewData["error"]</h4>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

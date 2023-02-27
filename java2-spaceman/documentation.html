@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documentation</title>
+<style>
+.tab {
+display: inline-block;
+margin-left: 20px;
+}
+</style>
+</head>
+<body>
+<h1>Documentation for Spaceman project</h1><h2>Asteroid</h2>
+<h3><i>package hr.project.model</i></h3>
+<h4>public Asteroid</h4>
+<b><i>extends</i></b><br><br><span class="tab">hr.project.model.Character</span><br><span class="tab">java.lang.Object</span><br><br><b><i>implements</i></b><br><br><span class="tab">java.io.Externalizable</span><br></p>
+<p><b><i>Fields:</i></b><br><br><span class="tab">private static final long hr.project.model.Asteroid.serialVersionUID</span><br><span class="tab">private hr.project.model.AsteroidType hr.project.model.Asteroid.type</span><br></p><p><b><i>Methods:</i></b><br><br><span class="tab">public class hr.project.model.AsteroidType getType()</span><br><span class="tab">public void readExternal(java.io.ObjectInput arg0) <b>throws</b> <i>class java.io.IOException</i>, <i>class java.lang.ClassNotFoundException</i></span><br><span class="tab">public void writeExternal(java.io.ObjectOutput arg0) <b>throws</b> <i>class java.io.IOException</i></span><br><span class="tab">public void setType(hr.project.model.AsteroidType arg0)</span><br><span class="tab">public int getPoints()</span><br></p><p><b><i>Constructors:</i></b><br><br><span class="tab">public hr.project.model.Asteroid()</span><br><span class="tab">public hr.project.model.Asteroid(javafx.scene.shape.Polygon arg0, hr.project.model.AsteroidType arg1, javafx.scene.image.Image arg2, int arg3, int arg4, int arg5)</span><br></p>
+
+<h2>AsteroidType</h2>
+<h3><i>package hr.project.model</i></h3>
+<h4>public final AsteroidType</h4>
+<b><i>extends</i></b><br><br><span class="tab">java.lang.Enum</span><br><span class="tab">java.lang.Object</span><br></p>
+<p><b><i>Fields:</i></b><br><br><span class="tab">public static final hr.project.model.AsteroidType hr.project.model.AsteroidType.BIG</span><br><span class="tab">public static final hr.project.model.AsteroidType hr.project.model.AsteroidType.MEDIUM</span><br><span class="tab">public static final hr.project.model.AsteroidType hr.project.model.AsteroidType.SMALL</span><br><span class="tab">public static final hr.project.model.AsteroidType hr.project.model.AsteroidType.TINY</span><br><span class="tab">private final int hr.project.model.AsteroidType.size</span><br><span class="tab">private static final hr.project.model.AsteroidType[] hr.project.model.AsteroidType.$VALUES</span><br></p><p><b><i>Methods:</i></b><br><br><span class="tab">public static class [Lhr.project.model.AsteroidType; values()</span><br><span class="tab">public static class hr.project.model.AsteroidType valueOf(java.lang.String arg0)</span><br><span class="tab">public int getSize()</span><br><span class="tab">public static class hr.project.model.AsteroidType from(int arg0)</span><br><span class="tab">public int getSubtype()</span><br></p><p><b><i>Constructors:</i></b><br><br><span class="tab">private hr.project.model.AsteroidType(java.lang.String arg0, int arg1, int arg2)</span><br></p>
+
+<h2>Astronaut</h2>
+<h3><i>package hr.project.model</i></h3>
+<h4>public Astronaut</h4>
+<b><i>extends</i></b><br><br><span class="tab">hr.project.model.Character</span><br><span class="tab">java.lang.Object</span><br><br><b><i>implements</i></b><br><br><span class="tab">java.io.Externalizable</span><br></p>
+<p><b><i>Fields:</i></b><br><br><span class="tab">private static final long hr.project.model.Astronaut.serialVersionUID</span><br><span class="tab">private static final int hr.project.model.Astronaut.LASER_SPEED</span><br><span class="tab">private static final javafx.scene.shape.Polygon hr.project.model.Astronaut.SHAPE</span><br><span class="tab">private hr.project.model.AstronautType hr.project.model.Astronaut.type</span><br></p><p><b><i>Methods:</i></b><br><br><span class="tab">public void stop()</span><br><span class="tab">public class hr.project.model.AstronautType getType()</span><br><span class="tab">public void readExternal(java.io.ObjectInput arg0) <b>throws</b> <i>class java.io.IOException</i>, <i>class java.lang.ClassNotFoundException</i></span><br><span class="tab">public void writeExternal(java.io.ObjectOutput arg0) <b>throws</b> <i>class java.io.IOException</i></span><br><span class="tab">public void setType(hr.project.model.AstronautType arg0)</span><br><span class="tab">public class hr.project.model.Laser fire(int arg0) <b>throws</b> <i>class java.lang.Exception</i></span><br><span class="tab">public void move()</span><br><span class="tab">public void moveRight()</span><br><span class="tab">public void moveUp()</span><br><span class="tab">public void moveDown()</span><br><span class="tab">public void moveLeft()</span><br></p><p><b><i>Constructors:</i></b><br><br><span class="tab">public hr.project.model.Astronaut()</span><br><span class="tab">public hr.project.model.Astronaut(javafx.scene.image.Image arg0, int arg1, int arg2, hr.project.model.AstronautType arg3)</span><br></p>
+
+<h2>AstronautType</h2>
+<h3><i>package hr.project.model</i></h3>
+<h4>public final AstronautType</h4>
+<b><i>extends</i></b><br><br><span class="tab">java.lang.Enum</span><br><span class="tab">java.lang.Object</span><br></p>
+<p><b><i>Fields:</i></b><br><br><span class="tab">public static final hr.project.model.AstronautType hr.project.model.AstronautType.GREEN</span><br><span class="tab">public static final hr.project.model.AstronautType hr.project.model.AstronautType.BLUE</span><br><span class="tab">private final int hr.project.model.AstronautType.type</span><br><span class="tab">private static final hr.project.model.AstronautType[] hr.project.model.AstronautType.$VALUES</span><br></p><p><b><i>Methods:</i></b><br><br><span class="tab">public static class [Lhr.project.model.AstronautType; values()</span><br><span class="tab">public static class hr.project.model.AstronautType valueOf(java.lang.String arg0)</span><br><span class="tab">public int getValue()</span><br><span class="tab">public static class hr.project.model.AstronautType from(int arg0)</span><br></p><p><b><i>Constructors:</i></b><br><br><span class="tab">private hr.project.model.AstronautType(java.lang.String arg0, int arg1, int arg2)</span><br></p>
+
+<h2>Character</h2>
+<h3><i>package hr.project.model</i></h3>
+<h4>public abstract Character</h4>
+<b><i>extends</i></b><br><br><span class="tab">java.lang.Object</span><br></p>
+<p><b><i>Fields:</i></b><br><br><span class="tab">private javafx.scene.shape.Polygon hr.project.model.Character.shape</span><br><span class="tab">private javafx.geometry.Point2D hr.project.model.Character.movement</span><br><span class="tab">private boolean hr.project.model.Character.invisible</span><br></p><p><b><i>Methods:</i></b><br><br><span class="tab">public class javafx.scene.shape.Polygon getShape()</span><br><span class="tab">public void setShape(javafx.scene.shape.Polygon arg0)</span><br><span class="tab">public void move()</span><br><span class="tab">public boolean collide(hr.project.model.Character arg0)</span><br><span class="tab">public class javafx.geometry.Point2D getMovement()</span><br><span class="tab">public void setMovement(javafx.geometry.Point2D arg0)</span><br><span class="tab">public boolean isInvisible()</span><br><span class="tab">public void setInvisibility(boolean arg0)</span><br></p><p><b><i>Constructors:</i></b><br><br><span class="tab">public hr.project.model.Character()</span><br><span class="tab">public hr.project.model.Character(javafx.scene.shape.Polygon arg0, int arg1, int arg2)</span><br></p>
+
+<h2>Game</h2>
+<h3><i>package hr.project.model</i></h3>
+<h4>public Game</h4>
+<b><i>extends</i></b><br><br><span class="tab">java.lang.Object</span><br></p>
+<p><b><i>Fields:</i></b><br><br></p><p><b><i>Methods:</i></b><br><br></p><p><b><i>Constructors:</i></b><br><br><span class="tab">public hr.project.model.Game()</span><br></p>
+
+<h2>Laser</h2>
+<h3><i>package hr.project.model</i></h3>
+<h4>public Laser</h4>
+<b><i>extends</i></b><br><br><span class="tab">hr.project.model.Character</span><br><span class="tab">java.lang.Object</span><br><br><b><i>implements</i></b><br><br><span class="tab">java.io.Externalizable</span><br></p>
+<p><b><i>Fields:</i></b><br><br><span class="tab">private static final long hr.project.model.Laser.serialVersionUID</span><br></p><p><b><i>Methods:</i></b><br><br><span class="tab">public void readExternal(java.io.ObjectInput arg0) <b>throws</b> <i>class java.io.IOException</i>, <i>class java.lang.ClassNotFoundException</i></span><br><span class="tab">public void writeExternal(java.io.ObjectOutput arg0) <b>throws</b> <i>class java.io.IOException</i></span><br></p><p><b><i>Constructors:</i></b><br><br><span class="tab">public hr.project.model.Laser()</span><br><span class="tab">public hr.project.model.Laser(javafx.scene.image.Image arg0, int arg1, int arg2, int arg3)</span><br></p>
+
+<h2>PreviousScene</h2>
+<h3><i>package hr.project.model</i></h3>
+<h4>public abstract interface PreviousScene</h4>
+</p>
+<p><b><i>Fields:</i></b><br><br></p><p><b><i>Methods:</i></b><br><br><span class="tab">public abstract void loadPreviousScene(javafx.scene.Scene arg0)</span><br></p><p><b><i>Constructors:</i></b><br><br></p>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="pnGame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../style/MultiSpaceman.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.project.controller.MultiGameController">
+    <children>
+        <Button fx:id="btnInfo" layoutX="200.0" layoutY="250.0" mnemonicParsing="false" onAction="#start" text="Start" />
+        <Label fx:id="lblScoreFirst" alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="21.0" text="SCORE: 0" />
+      <Label fx:id="lblScoreSecond" alignment="CENTER" contentDisplay="CENTER" layoutX="493.0" layoutY="21.0" text="SCORE: 0" />
+      <Label fx:id="lblWaiting" layoutX="146.0" layoutY="289.0" text="Connected. Waiting for another player..." visible="false" />
+    </children>
+</Pane>
